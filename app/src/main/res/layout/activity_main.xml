@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,5 +9,33 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="#26ade0"
     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="@string/make_everyday_decisions_easier" />
+
+    <ImageView
+        android:id="@+id/imageEightBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/displays_the_message"
+        app:srcCompat="@drawable/ball1" />
+
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageEightBall"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:background="#3F51B5"
+        android:textColor="@android:color/white"
+        android:text="@string/ask" />
 </RelativeLayout>
